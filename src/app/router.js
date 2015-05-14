@@ -17,7 +17,7 @@ export default Backbone.Router.extend({
 
   dashboard: () => {
     var helloView = new HelloView({
-      template: _.template('Hello <%= name %> !')
+      template: 'hello'
     }).render();
 
     $('#js-app').empty().append(helloView.$el);
