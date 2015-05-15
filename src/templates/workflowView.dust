@@ -1,0 +1,13 @@
+<div class='row'>
+	<div class='col-md-4'>
+		<ul class='list-group'>
+			{#stages}
+				<li class='list-group-item'><a href='#' data-stage="{name}">{name}</a></li>
+			{/stages}
+		</ul>
+	</div>
+	<div class='col-md-8'>
+		<div class='sub-view-container'>
+		</div>
+	</div>
+</div>

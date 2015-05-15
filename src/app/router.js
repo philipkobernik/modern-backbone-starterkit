@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import Backbone from 'backbone';
 
-import HelloView from './views/hello';
+import WorkflowView from './views/workflowView.js';
 
 
 export default Backbone.Router.extend({
@@ -16,11 +16,11 @@ export default Backbone.Router.extend({
   },
 
   dashboard: () => {
-    var helloView = new HelloView({
-      template: 'hello'
+    var workflowView = new WorkflowView({
+      template: 'workflowView'
     }).render();
 
-    $('#js-app').empty().append(helloView.$el);
+    $('#js-app').empty().append(workflowView.$el);
   },
 
   about: () => {
